@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+    </header>
+
+    <main>
+
+        <section class="section">
+            <h1>BMI Calculator</h1>
+
+            <h2>What is BMI index?</h2>
+            <p>The BMI (Body Mass Index) is a widely respected tool that allows us to assess our body weight. Its
+                calculation is simple, requiring only numerical values for our height and weight. This index is obtained
+                by dividing our body weight (expressed in kilograms) by the square of our height (expressed in meters).
+                When the BMI result indicates a healthy body weight, we can be satisfied with the outcome! It is worth
+                taking care to maintain such a proportion because monitoring it allows us to avoid many diseases.
+            </p>
+
+            <p>While it may not be the most accurate method, it will give you an idea of whether you should lose or gain
+                weight. To calculate your BMI, use the BMI calculator below and check if you are within a healthy weight
+                range! However, remember that BMI is just one of many tools and may not provide a comprehensive picture
+                of your health. Therefore, it is also advisable to consult with a doctor for a more thorough assessment
+                of your weight and overall health.
+            </p>
+        </section>
+
+        <div class="container">
+            <form class="form js-form">
+
+                <fieldset class="form__fildset">
+                    <legend class="form__legend">Your parameters</legend>
+                    <p>
+                        <label>
+                            <span class="form__labelText">
+                                Height(cm):
+                            </span>
+                            <input class="form__field js-height" name="heightInput" type="number" maxlength="3" step="1"
+                                min="1" max="300" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <span class="form__labelText">
+                                Weight(kg):
+                            </span>
+                            <input class="form__field js-weight" name="weightInput" type="number" step="1" maxlength="3"
+                                max="600" min=1 required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <button class="form__button">Calculate BMI</button>
+                    </p>
+
+                    <p>
+
+                        <span class="form__labelResult">
+                            Value of your BMI indicator equals:
+                        </span>
+                        <strong class="form__bmiResoult js-bmiResult"></strong>
+
+                    </p>
+
+                </fieldset>
+
+            </form>
+        </div>
+
+        <section class="section">
+            <p>Check if your BMI is in the correct range:</p>
+        </section>
+
+        <table class="table">
+            <caption class="table__caption">CDC Adult BMI Categories</caption>
+            <thead>
+                <th class="table__cell table__cell--header">BMI</th>
+                <th class="table__cell table__cell--header">Category</th>
+            </thead>
+            <tbody>
+                <tr class="table__row ">
+                    <td class="table__cell">less than 16</td>
+                    <td class="table__cell table__cell--red">starvation</td>
+                </tr>
+                <tr class="table__row ">
+                    <td class="table__cell">16 – 16.99</td>
+                    <td class="table__cell table__cell--orange">severely underweight</td>
+                </tr>
+                <tr class="table__row ">
+                    <td class="table__cell">17 – 18.49</td>
+                    <td class="table__cell table__cell--yellow">underweight</td>
+                </tr>
+                <tr class="table__row ">
+                    <td class="table__cell">18.5 – 24.99</td>
+                    <td class="table__cell table__cell--green">normal weight</td>
+                </tr>
+                <tr class="table__row ">
+                    <td class="table__cell">25 – 29.99</td>
+                    <td class="table__cell table__cell--yellow">overweight</td>
+                </tr>
+                <tr class="table__row ">
+                    <td class="table__cell">30 – 34.99</td>
+                    <td class="table__cell table__cell--orange">obesity class I</td>
+                </tr>
+                <tr class="table__row ">
+                    <td class="table__cell">35 – 39.99</td>
+                    <td class="table__cell table__cell--red">obesity class II</td>
+                </tr>
+                <tr class="table__row ">
+                    <td class="table__cell">more than 40</td>
+                    <td class="table__cell table__cell--darkRed">obesity class III</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <footer class="footer">
+        © Copyright Adriana Kuczaj 2023
+    </footer>
+
+</body>
+
+</html>

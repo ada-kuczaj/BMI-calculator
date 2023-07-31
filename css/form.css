@@ -1,0 +1,48 @@
+.form__labelText {
+    display: inline-block;
+    width: 100px;
+    margin: 5px 5px 5px 0px;
+}
+
+.form__field {
+    width: 235px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form__fildset {
+    border-radius: 5px;
+    padding: 5px 50px;
+}
+
+.form__button {
+    width: 344px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background-color: rgb(209, 212, 215);
+}
+
+.form__button:hover {
+    background-color: rgb(170, 173, 176);
+}
+
+.form__button:active {
+    background-color: rgb(215, 219, 222);
+}
+
+.form__legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form__bmiResoult {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.form__labelResult {
+    font-weight: 700px;
+    font-size: 18px;
+}
+

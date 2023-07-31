@@ -1,0 +1,48 @@
+.table {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.table__row:hover {
+    background-color: rgb(209, 212, 215);
+}
+
+.table__cell {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+    width: 225px;
+}
+
+.table__cell--header {
+    background-color: rgb(209, 212, 215);
+}
+
+.table__cell--red {
+    background-color: rgb(235, 155, 139);
+}
+
+.table__cell--darkRed {
+    background-color: rgb(241, 117, 92);
+}
+
+.table__cell--orange {
+    background-color: rgb(245, 196, 145);
+}
+
+.table__cell--green {
+    background-color: rgb(172, 230, 146);
+}
+
+.table__cell--yellow {
+    background-color: rgb(255, 229, 153);
+}
+
+.table__caption {
+    caption-side: bottom;
+    text-align: right;
+    font-size: 15px;
+    padding: 10px;
+}
