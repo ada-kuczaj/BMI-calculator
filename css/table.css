@@ -6,6 +6,7 @@
 }
 
 .table__row:hover {
+    opacity: 80%;
     background-color: rgb(209, 212, 215);
 }
 
